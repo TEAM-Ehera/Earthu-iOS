@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct EventCreateView: View {
+struct EventCreationView: View {
     var body: some View {
-        Text("EventCreateView")
+        Text("EventCreationView")
             .font(Font.largeTitle.bold())
     }
 }

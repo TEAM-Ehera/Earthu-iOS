@@ -10,9 +10,6 @@ import SwiftUI
 struct MyPageView: View {
     var body: some View {
         Text("MyPageView")
+            .font(Font.largeTitle.bold())
     }
-}
-
-#Preview {
-    MyPageView()
 }

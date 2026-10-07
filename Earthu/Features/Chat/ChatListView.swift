@@ -9,10 +9,7 @@ import SwiftUI
 
 struct ChatListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("ChatListView")
+            .font(Font.largeTitle.bold())
     }
-}
-
-#Preview {
-    ChatListView()
 }
