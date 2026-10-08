@@ -15,9 +15,8 @@ final class AppRouter {
     enum AppFlow {
         case splash
         case onboarding
-        case login, signup
+        case auth
         case main
-        case offline, error
     }
     
     enum AppTab: Hashable {
@@ -48,5 +47,28 @@ final class AppRouter {
     
     func popToRoot() {
         paths[selection] = .init()
+    }
+}
+
+extension AppRouter {
+    func finishSplash(isLoggedIn: Bool, didOnboard: Bool) {
+        if !isLoggedIn {
+            flow = .auth
+        } else if !didOnboard {
+            flow = .onboarding
+        } else {
+            flow = .main
+        }
+    }
+    
+    func didSignUp() { flow = .onboarding }
+    func didLogIn() { flow = .main }
+    func finishOnboarding() { flow = .main }
+    func didLogOut() { reset(); flow = .auth }
+    func didSignOut() { reset(); flow = .auth }
+    
+    private func reset() {
+        selection = .home
+        paths = [:]
     }
 }

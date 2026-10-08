@@ -55,5 +55,5 @@ Maps Figma Variables / Styles to code tokens. **Figma is the source of truth for
 
 | Figma Component  | Code            | Path                              |
 | ---------------- | --------------- | --------------------------------- |
-| `Button/Primary` | `PrimaryButton` | `Presentation/Components/Button/` |
+| `Button/Primary` | `PrimaryButton` | `Earthu/DesignSystem/Components/` |
 | `Card/Default`   | `DefaultCard`   | `Presentation/Components/Card/`   |

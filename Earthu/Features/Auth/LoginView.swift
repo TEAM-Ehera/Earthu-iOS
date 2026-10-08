@@ -11,5 +11,11 @@ struct LoginView: View {
     var body: some View {
         Text("Login")
             .font(Font.largeTitle.bold())
+        Button {
+            
+        } label: {
+            Text("Login")
+        }
+
     }
 }

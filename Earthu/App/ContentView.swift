@@ -7,19 +7,23 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RootView: View {
+    @Environment(AppRouter.self) private var router
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            switch router.flow {
+            case .splash:
+                SplashView()
+            case .auth:
+                LoginView()
+            case .onboarding:
+                OnboardingView()
+            case .main:
+                MainView()
+            }
         }
-        .padding()
+        .animation(.default, value: router.flow)
     }
-}
-
-#Preview {
-    ContentView()
 }
  

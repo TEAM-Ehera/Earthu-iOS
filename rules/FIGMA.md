@@ -8,6 +8,9 @@ This is not a design guide. These are rules for turning Figma UI into code **wit
 - Do not eyeball screenshots. Read each node's layout properties through the Figma MCP.
 - Do not fill in values that are not specified. Report them as Gaps.
 - Do not approximate the design with absolute positioning (`.position()`, `.offset()`) or hard-coded raw values.
+- Reference follow links
+
+\[DesignSystem\](https://www.figma.com/design/Oc5LQED0S2UeVfXvdAjNwO/-Earthuu-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC?node-id=1-239&amp;t=EQOfge7UZTrLTLf2-1)
 
 ## Pre-Implementation Check
 
