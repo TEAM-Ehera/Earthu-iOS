@@ -10,9 +10,22 @@
 		C0F7C596306F838F00D84779 /* Earthu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C0F7C5B0306F839000D84779 /* Exceptions for "Earthu" folder in "Earthu" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C0F7C595306F838F00D84779 /* Earthu */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C0F7C598306F838F00D84779 /* Earthu */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C0F7C5B0306F839000D84779 /* Exceptions for "Earthu" folder in "Earthu" target */,
+			);
 			path = Earthu;
 			sourceTree = "<group>";
 		};
@@ -258,6 +271,7 @@
 				DEVELOPMENT_TEAM = 2QJX795Q3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Earthu/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,6 +308,7 @@
 				DEVELOPMENT_TEAM = 2QJX795Q3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Earthu/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
