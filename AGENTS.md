@@ -8,14 +8,15 @@
 
 Follow rules/GIT.md
 
-#  FIGMA Rules
+#  Design Rules
 
-When implementing UI from Figma, follow:
+When implementing UI from Figma, follow: rules/FIGMA.md and use design system tokens and components defined in rules/DESIGN.md
 
-rules/FIGMA.md
+# SwiftUI Rules
 
-# Design Rules
+When writing, modifying, or reviewing SwiftUI code under `Earthu/`, follow the `swiftui-pro` skill.
 
-When writing any UI code, use the design system tokens and components defined in:
+- Claude Code: `.claude/skills/swiftui-pro/SKILL.md`
+- Codex: `.codex/skills/swiftui-pro/SKILL.md` (symlink to the same directory)
 
-rules/DESIGN.md
+Load its `references/*.md` as the skill directs. Where it conflicts with rules/DESIGN.md, this project's design tokens win.
